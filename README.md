@@ -1,2 +1,2 @@
 # langu0r.github.io
-new
+frontend developing
