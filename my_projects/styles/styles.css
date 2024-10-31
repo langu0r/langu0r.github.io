@@ -183,6 +183,42 @@ body {
   object-fit: cover;
 }
 
+.event {
+  padding: 40px 0 150px;
+  background-color: #ffffff;
+}
+
+.reserve {
+  display: grid;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: 
+  "checkbox scheme"
+  "order legend";
+  gap: 65px 11%;
+  width: 100%;
+
+}
+
+.reserve__checkbox {
+  grid-area: "checkbox";
+  background-color: red;
+}
+
+.reserve__scheme {
+  grid-area: "scheme";
+  background-color: blue;
+}
+
+.reserve__order {
+  grid-area: "order";
+  background-color: magenta;
+}
+
+.reserve__legend {
+  grid-area: "legend";
+  background-color: yellow;
+}
+
 .main {
   flex: 1 0 auto;
   background-color: aquamarine;
@@ -214,34 +250,4 @@ body {
 .btn:active {
   background-color: #1f1e1e;
   color: #ffffff
-}
-
-
-h1 {
-    font-size: 32px;
-}
-h2 {
-    font-size: 28px;
-}
-h3 {
-    font-size: 24px;
-}
-h4 {
-    font-size: 20px;
-}
-h5 {
-    font-size: 18px;
-}
-h6 {
-    font-size: 16px;
-}
-
-p {
-    font-size: 16px;
-}
-
-.text1 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.51px;
 }
