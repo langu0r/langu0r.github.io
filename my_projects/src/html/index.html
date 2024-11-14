@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('blocks/head.html')
+
   <body class="body">
     @@include('blocks/page-header.html')
 
+    <div class="lenni">
+      <article class="lenni__info">
+        <p>АРТ - ПРОСТРАНСТВО</p>
+          <img src="assets/icons/lenni.svg" alt="lenni" class="lenni__img" />
+        <p>ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ<br>МЕСТО ДЛЯ НАСТОЯЩЕГО</p>
+      </article>
+      <div class="lenni__iwant">
+        <p>Я ХОЧУ:</p>
+        <div class="lenni__iwant-btn">
+          <a href="#" class="lenni__btn btn">Провести мероприятие</a>
+          <a href="#" class="lenni__btn btn">Стать арендатором</a>
+        </div>
+      </div>
+    </div>
+
     <main class="main">
-      <div class="home">
+
+            <div class="home">
             <!-- prettier-ignore -->
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
       </div>

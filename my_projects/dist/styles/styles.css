@@ -264,7 +264,8 @@ textarea:focus::placeholder {
   margin-right: 0;
 }
 .home {
-  padding: 100px 0;
+  padding: 140px 0 100px;
+  background-color: #dedede;
 }
 .home__listing {
   margin-bottom: 95px;
@@ -294,14 +295,14 @@ textarea:focus::placeholder {
 }
 .events {
   padding: 140px 0 100px;
-  background-color: #ffffff;
+  background-color: white;
 }
 .events__listing {
   margin-bottom: 100px;
 }
 .event {
   padding: 40px 0 150px;
-  background-color: #ffffff;
+  background-color: gray;
 }
 .page-header {
   position: fixed;
@@ -990,4 +991,22 @@ textarea:focus::placeholder {
 }
 .content b {
   font-weight: 700;
+}
+.lenni {
+  background-color: white;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 45px;
+  padding-bottom: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lenni__iwant {
+  font-size: 22px;
+}
+.lenni__iwant-btnbtn {
+  font-family: "Open Sans", serif;
+  margin-left: 145px;
+  margin-right: 145px;
 }
