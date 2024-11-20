@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="show-event-popup">
 
 <head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
   <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
@@ -147,7 +147,8 @@
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
         <button class="pp__x-btn x-btn">
-          <svg class="x-btn__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
         </button>
       </div>
@@ -214,7 +215,7 @@
           </div>
 
           <div class="form__section">
-            <h6 class="form__section-title">Контакные данные:</h6>
+            <h6 class="field__title">Контакные данные:</h6>
 
             <div class="form__list">
               <label class="field form__field form__field--w50">

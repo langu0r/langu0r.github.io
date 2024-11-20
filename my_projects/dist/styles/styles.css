@@ -49,7 +49,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background-color: #dedede;
+  background-color: transparent;
   background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
@@ -539,7 +539,7 @@ textarea:focus::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 95px 50px;
+  padding: 90px 40px 50px;
   background-color: rgba(28, 27, 27, 0.4);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -619,9 +619,7 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  gap: 15px;
 }
 .radio__item {
   -webkit-box-sizing: border-box;
@@ -634,10 +632,6 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 15px;
   min-height: 23px;
   padding-left: 23px;
   color: #1f1t1t;
@@ -664,9 +658,6 @@ textarea:focus::placeholder {
   background-color: #1f1t1t;
 }
 .radio__mark {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -1005,8 +996,15 @@ textarea:focus::placeholder {
 .lenni__iwant {
   font-size: 22px;
 }
-.lenni__iwant-btnbtn {
+.lenni__iwant-btn {
   font-family: "Open Sans", serif;
-  margin-left: 145px;
-  margin-right: 145px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }

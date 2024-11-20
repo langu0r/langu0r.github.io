@@ -5,8 +5,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 90px 95px 50px;
-    background-color: rgba(28, 27, 27, 0.4);
+    padding: 90px 40px 50px;
+    background-color: fade(@grey, 98%);
     backdrop-filter: blur(50px);
     overflow-y: auto;
     z-index: 110;
@@ -19,11 +19,16 @@
       width: 100%;
       max-width: 1210px;
       margin: auto;
-      background-color: @gray;
+      background-color: @grey;
       background-image: url(../assets/images/noise.png);
       background-position: 0 0;
       background-size: auto;
       background-repeat: repeat;
+      box-shadow: 0px 0px 30px rgpa(31, 31, 30, 0, 0.55);
+
+      @supports (backdrop-filter: blur(20%)) {
+        box-shadow: none;
+      }
     }
     &__container {
       box-sizing: border-box;
@@ -52,7 +57,7 @@
         padding: 10px 85px;
         width: 595px;
         min-height: 80px;
-        background-color: @black;
+        background-color: black;
         text-transform: uppercase;
         font-weight: 400;
         font-family: @font2;
