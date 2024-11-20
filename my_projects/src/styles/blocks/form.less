@@ -1,4 +1,33 @@
 .form {
-    display: flex;
-    flex-wrap: wrap;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+    }
+    &__filled {
+        width: 100%;
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+        &--mb30 {
+            margin-bottom: 30px;
+        }
+    }
+    &__group {
+        width: 100%;
+        &--w50 {
+            width: calc(50% - 30px);
+        }
+      }
+      &__title {
+        display: block;
+        margin: 0 0 10px;
+        color: @black;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.3px;
+      }
+    &__section {
+        margin-bottom: 50px;
+    }
 }
