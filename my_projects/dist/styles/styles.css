@@ -54,7 +54,7 @@ body {
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
-  color: #000000;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -74,7 +74,7 @@ body {
           flex: 0 0 auto;
 }
 a {
-  color: #000000;
+  color: #1f1e1e;
   outline: none;
 }
 img {
@@ -89,7 +89,7 @@ select {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
-  color: #000000;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
 }
 textarea {
@@ -155,6 +155,33 @@ textarea:focus::placeholder {
 .btn :active {
   background-color: #1f1e1e;
   color: #ffffff;
+}
+.btn--red {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 40px;
+  background-color: #bc3324;
+  outline: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
+  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.btn--red:hover,
+.btn--red :active {
+  background-color: #A51505;
 }
 .section-title {
   -webkit-box-sizing: border-box;
@@ -424,7 +451,7 @@ textarea:focus::placeholder {
 }
 .article-card__title-link {
   margin: auto 0 40px;
-  color: #000000;
+  color: #1f1e1e;
   text-decoration-color: transparent;
   -webkit-transition: color 0.2s, text-decoration-color 0.2s;
   transition: color 0.2s, text-decoration-color 0.2s;
@@ -471,7 +498,7 @@ textarea:focus::placeholder {
   width: 100%;
   max-width: 1254px;
   height: 1px;
-  background-color: #000000;
+  background-color: #1f1e1e;
   pointer-events: none;
 }
 .field {
@@ -507,7 +534,7 @@ textarea:focus::placeholder {
 .field__title {
   display: block;
   margin: 0 0 15px;
-  color: #000000;
+  color: #1f1e1e;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3px;
@@ -519,7 +546,7 @@ textarea:focus::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
-  color: #000000;
+  color: #1f1e1e;
 }
 .field .field__select {
   -webkit-box-sizing: border-box;
@@ -533,7 +560,7 @@ textarea:focus::placeholder {
   background-color: #ffffff;
   font-size: 16px;
   line-height: 1.3;
-  color: #000000;
+  color: #1f1e1e;
 }
 .field__date-inputs {
   display: -webkit-box;
@@ -669,7 +696,7 @@ textarea:focus::placeholder {
           flex-direction: column;
   min-height: 23px;
   padding-left: 23px;
-  color: #000000;
+  color: #1f1e1e;
   cursor: pointer;
 }
 .radio__input {
@@ -687,7 +714,7 @@ textarea:focus::placeholder {
   pointer-events: none !important;
 }
 .radio__input:checked ~ .radio__mark {
-  background-color: #000000;
+  background-color: #1f1e1e;
 }
 .radio__mark {
   -webkit-box-sizing: border-box;
@@ -697,7 +724,7 @@ textarea:focus::placeholder {
   top: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid #000000;
+  border: 2px solid #1f1e1e;
   border-radius: 50%;
   padding: 3px;
   background-clip: content-box;
@@ -728,7 +755,7 @@ textarea:focus::placeholder {
   min-height: 24px;
   padding-top: 2px;
   padding-left: 24px;
-  color: #000000;
+  color: #1f1e1e;
   cursor: pointer;
 }
 .check__input {
@@ -746,7 +773,7 @@ textarea:focus::placeholder {
   pointer-events: none !important;
 }
 .check__input:checked ~ .check__mark {
-  background-color: #000000;
+  background-color: #1f1e1e;
 }
 .check__input:checked ~ .check__mark::after {
   content: "";
@@ -771,7 +798,7 @@ textarea:focus::placeholder {
   top: 0;
   width: 24px;
   height: 24px;
-  border: 1px solid #000000;
+  border: 1px solid #1f1e1e;
 }
 .check__label {
   margin-left: 15px;
@@ -797,7 +824,7 @@ textarea:focus::placeholder {
   opacity: 0.5;
 }
 .content {
-  color: #000000;
+  color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -807,18 +834,18 @@ textarea:focus::placeholder {
 }
 .content h1,
 .content h2,
-.content h4,
+.content h3,
 .content h4,
 .content h5,
 .content h6 {
   margin: 1.3em 0 0.8em;
   font-family: "Open Sans", sans-serif;
-  color: #000000;
+  color: #1f1e1e;
   font-weight: 600;
 }
 .content h1:first-child,
 .content h2:first-child,
-.content h4:first-child,
+.content h3:first-child,
 .content h4:first-child,
 .content h5:first-child,
 .content h6:first-child {
@@ -826,7 +853,7 @@ textarea:focus::placeholder {
 }
 .content h1:last-child,
 .content h2:last-child,
-.content h4:last-child,
+.content h3:last-child,
 .content h4:last-child,
 .content h5:last-child,
 .content h6:last-child {
@@ -838,7 +865,7 @@ textarea:focus::placeholder {
 .content h2 {
   font-size: 28px;
 }
-.content h4 {
+.content h3 {
   font-size: 24px;
 }
 .content h4 {
@@ -982,7 +1009,7 @@ textarea:focus::placeholder {
 }
 .content a {
   font-weight: 600;
-  color: #000000;
+  color: #1f1e1e;
   text-decoration: underline;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -1017,23 +1044,31 @@ textarea:focus::placeholder {
 .content b {
   font-weight: 700;
 }
+.header1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+.header3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 22px;
+}
 .lenni {
   background-color: white;
   text-align: center;
-  font-family: "Lora", serif;
   font-size: 45px;
   padding-bottom: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.lenni__iwant {
-  font-size: 22px;
 }
 .lenni__iwant-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Open Sans", serif;
-  margin-left: 45px;
-  margin-right: 45px;
+  gap: 80px;
 }
 .form__list {
   display: -webkit-box;
@@ -1061,7 +1096,7 @@ textarea:focus::placeholder {
 .form__title {
   display: block;
   margin: 0 0 10px;
-  color: #000000;
+  color: #1f1e1e;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3px;
@@ -1084,4 +1119,96 @@ textarea:focus::placeholder {
 }
 .form__cancel {
   width: 401px;
+}
+.table {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  max-width: 1414px;
+  margin-bottom: 100px;
+  width: 100%;
+  border-collapse: collapse;
+  color: #1F1E1E;
+  text-align: center;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__th {
+  height: 85px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.table__footer-th {
+  height: 60px;
+  font-size: 0;
+}
+.table__th,
+.table__footer-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-right: 1px solid #BFBFBF;
+  text-transform: uppercase;
+}
+.table__th:first-child,
+.table__footer-th:first-child {
+  padding-left: 0;
+}
+.table__th:last-child,
+.table__footer-th:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.table__body-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px 10px 10px 0;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+.table__td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.table__td:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.ok {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #1F1E1E;
+}
+.ok::after {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 8px;
+  height: 14px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
