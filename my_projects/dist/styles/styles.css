@@ -506,11 +506,12 @@ textarea:focus::placeholder {
 }
 .field__title {
   display: block;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3px;
+  height: 15px;
 }
 .field__label {
   display: block;
@@ -566,7 +567,7 @@ textarea:focus::placeholder {
   right: 0;
   bottom: 0;
   padding: 90px 40px 50px;
-  background-color: rgba(222, 222, 222, 0.98);
+  background-color: rgba(28, 27, 27, 0.4);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   overflow-y: auto;
@@ -671,9 +672,6 @@ textarea:focus::placeholder {
   color: #000000;
   cursor: pointer;
 }
-.radio__item:last-child {
-  margin-bottom: 0;
-}
 .radio__input {
   position: absolute !important;
   width: 0 !important;
@@ -688,10 +686,12 @@ textarea:focus::placeholder {
   visibility: hidden !important;
   pointer-events: none !important;
 }
-.radio:checked ~ .radio__mark {
+.radio__input:checked ~ .radio__mark {
   background-color: #000000;
 }
 .radio__mark {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   left: 0;
   top: 0;
@@ -1043,13 +1043,13 @@ textarea:focus::placeholder {
       flex-wrap: wrap;
   gap: 30px 60px;
 }
-.form__filled {
+.form__field {
   width: 100%;
 }
-.form__filled--w50 {
+.form__field--w50 {
   width: calc(50% - 30px);
 }
-.form__filled--mb30 {
+.form__field--mb30 {
   margin-bottom: 30px;
 }
 .form__group {
@@ -1065,7 +1065,23 @@ textarea:focus::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3px;
+  height: 15px;
 }
 .form__section {
   margin-bottom: 50px;
+}
+.form__check-list {
+  margin: 15px 0 15px 0;
+}
+.form__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 72px;
+}
+.form__submit {
+  width: 401px;
+}
+.form__cancel {
+  width: 401px;
 }

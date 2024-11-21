@@ -12,19 +12,19 @@
       padding-left: 23px;
       color: @black;
       cursor: pointer;
-      &:last-child {
-        margin-bottom: 0;
-      }
+ 
     }
     &__input {
         .is-hidden();
-      }
+      
       &:checked {
         &~.radio__mark {
           background-color: @black;
         }
       }
+    }
     &__mark {
+    box-sizing: border-box;
     position: absolute;
     left: 0;
     top: 0;

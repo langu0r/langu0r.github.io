@@ -1,10 +1,11 @@
 .form {
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px 60px;
     }
-    &__filled {
+    &__field {
         width: 100%;
         &--w50 {
             width: calc(50% - 30px);
@@ -26,8 +27,22 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 1.3px;
+        height: 15px;
       }
     &__section {
         margin-bottom: 50px;
+    }
+    &__check-list {
+        margin: 15px 0 15px 0;
+    }
+    &__btns {
+        display: flex;
+        gap: 72px;
+    }
+    &__submit {
+        width: 401px;
+    }
+    &__cancel {
+        width: 401px;
     }
 }
