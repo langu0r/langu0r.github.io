@@ -21,13 +21,19 @@
       </div>
     </div>
 
-    <main class="main">
+    @@include('events.html')
 
-            <div class="home">
+    <main class="main">
+      
+            @@include('blocks/about.html', {"class": "about"})
+
+          <div class="home">
             <!-- prettier-ignore -->
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
-      </div>
+          </div>
     </main>
+
+    
 
     @@include('blocks/page-footer.html')
 
