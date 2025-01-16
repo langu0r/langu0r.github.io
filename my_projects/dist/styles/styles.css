@@ -1153,21 +1153,19 @@ textarea:focus::placeholder {
   font-weight: 400;
   font-size: 22px;
 }
-.lenni {
-  background-color: white;
-  text-align: center;
-  font-size: 45px;
-  padding-bottom: 100px;
-}
-.lenni__iwant-btn {
+.logo-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Open Sans", serif;
-  gap: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin: 10px 0px 10px 0xp;
 }
 .form__list {
   display: -webkit-box;
@@ -1375,6 +1373,22 @@ textarea:focus::placeholder {
   width: calc(100%-57px);
   -o-object-fit: contain;
      object-fit: contain;
+}
+.iwant-block {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.iwant-block__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Используем Flexbox */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Центрируем кнопки по горизонтали */
+  gap: 80px;
+  /* Добавляем отступ между кнопками */
 }
 @media (max-width: 1659px) {
   .width_624 {

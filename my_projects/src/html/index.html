@@ -5,29 +5,28 @@
 
   <body class="body">
     @@include('blocks/page-header.html')
-
-    <div class="lenni">
-      <article class="lenni__info">
-        <h1 class="header1">АРТ - ПРОСТРАНСТВО</h1>
-          <img src="assets/icons/lenni.svg" alt="lenni" class="lenni__img" />
-        <h1 class="header1">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ<br>МЕСТО ДЛЯ НАСТОЯЩЕГО</h1>
-      </article>
-      <div class="lenni__iwant">
-        <h3 class="header3">Я ХОЧУ:</h3>
-        <div class="lenni__iwant-btn">
-          <a href="#" class="lenni__btn btn--red">Провести мероприятие</a>
-          <a href="#" class="lenni__btn btn">Стать арендатором</a>
-        </div>
+    
+    <div class="logo-block">
+      <span class="header1">АРТ-ПРОСТРАНСТВО</span>
+      <img src="assets/icons/lenni.svg" alt="lenni" class="logo__icon" />
+      <span class="header1">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ</span>
+      <span class="header1">МЕСТО ДЛЯ НАСТОЯЩЕГО</span>
+    </div>
+    
+    <div class="iwant-block">
+      <h3 class="header3">Я ХОЧУ:</h3>
+      <div class="iwant-block__btn">
+        <a href="#" class="btn btn--red">Провести мероприятие</a>
+        <a href="#" class="btn btn">Стать арендатором</a>
       </div>
     </div>
 
-    @@include('events.html')
-
-    @@include('blocks/about.html', {"class": "about"})
 
     <main class="main">
+      
 
-            
+      @@include('blocks/about.html', {"class": "about"})
+
           <div class="home">
             <!-- prettier-ignore -->
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
