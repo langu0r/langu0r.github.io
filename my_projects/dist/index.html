@@ -42,6 +42,7 @@
           </svg>
         </a>
       </div>
+      <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
 
 
     </div>
@@ -57,7 +58,9 @@
   <div class="iwant-block">
     <h3 class="header3">Я ХОЧУ:</h3>
     <div class="iwant-block__btn">
-      <a href="#" class="btn btn--red">Провести мероприятие</a>
+      <button type="button" class="btn btn--red" id="js-eventOpenBtn">
+        Провести мероприятие
+      </button>
       <a href="#" class="btn btn">Стать арендатором</a>
     </div>
   </div>
@@ -321,14 +324,10 @@
         </div>
         <a href="#" class="listing__link link">Смотреть все</a>
       </section>
+
     </div>
 
-
-
-
   </main>
-
-
 
   <footer class="page-footer">
     <div class="section">
@@ -342,10 +341,10 @@
 
 
 
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
+        <button class="pp__x-btn x-btn" id="js-ppCloseBtn">
           <svg class="x-btn__icon" width="12" height="12">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -453,7 +452,7 @@
               Отправить
             </button>
 
-            <button type="button" class="btn form__cancel form__submit--w50">
+            <button type="button" class="btn form__cancel form__submit--w50" id="js-ppCloseBtn">
               Закрыть
             </button>
           </div>
@@ -461,6 +460,7 @@
       </div>
     </div>
   </div>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

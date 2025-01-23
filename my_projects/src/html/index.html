@@ -16,7 +16,9 @@
     <div class="iwant-block">
       <h3 class="header3">Я ХОЧУ:</h3>
       <div class="iwant-block__btn">
-        <a href="#" class="btn btn--red">Провести мероприятие</a>
+        <button type="button" class="btn btn--red" id="js-eventOpenBtn">
+          Провести мероприятие
+        </button>
         <a href="#" class="btn btn">Стать арендатором</a>
       </div>
     </div>
@@ -72,18 +74,15 @@
 
           <div class="home">
             <!-- prettier-ignore -->
-            @@include('blocks/blog-listing.html', {"class": "home__listing"})
+          @@include('blocks/blog-listing.html', {"class": "home__listing"})
+
           </div>
 
-
-          
-
     </main>
-
-    
 
     @@include('blocks/page-footer.html')
 
     @@include('blocks/event-pp.html')
+    <script src="scripts/main.js"></script>
   </body>
 </html>
