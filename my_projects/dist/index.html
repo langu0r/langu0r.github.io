@@ -308,11 +308,15 @@
             </div>
             <footer class="swiper-footer">
               <button type="button" class="swiper-arrow-prev arrow arrow--left">
-                <img src="assets/icons/arrow-left.svg" alt="" class="arrow-icon" />
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow-left"></use>
+                </svg>
               </button>
               <div class="swiper-pagination"></div>
               <button type="button" class="swiper-arrow-next arrow">
-                <img src="assets/icons/arrow-right.svg" alt="" class="arrow-icon" />
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
+                </svg>
               </button>
             </footer>
           </div>
@@ -320,77 +324,122 @@
         </div>
       </div>
     </section>
-
-
-
-    <div class="home">
-      <!-- prettier-ignore -->
-      <section class="listing home__listing">
-        <h2 class="listing__title section-title">Блог</h2>
-        <div class="listing__article-list">
-          <!-- prettier-ignore -->
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
-              </picture>
+    <!-- prettier-ignore -->
+    <section class="listing home__listing">
+      <h2 class="listing__title section-title">Блог</h2>
+      <div class="listing__article-list">
+        <!-- prettier-ignore -->
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
+            </picture>
+          </a>
+          <div class="article-card__info">
+            <time datetime="2021-11-26T00:00" class="article-card__time">26.11.2021</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </div>
             </a>
-            <div class="article-card__info">
-              <time datetime="2021-11-26T00:00" class="article-card__time">26.11.2021</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
-                <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
-                </div>
-              </a>
-              <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика</p>
-            </div>
-          </article>
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/show.jpg" alt="VR show" class="article-card__img" />
-              </picture>
+            <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика</p>
+          </div>
+        </article>
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/show.jpg" alt="VR show" class="article-card__img" />
+            </picture>
+          </a>
+          <div class="article-card__info">
+            <time datetime="2022-11-05T00:00" class="article-card__time">05.11.2022</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Выставка VR в Томске</h4>
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </div>
             </a>
-            <div class="article-card__info">
-              <time datetime="2022-11-05T00:00" class="article-card__time">05.11.2022</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Выставка VR в Томске</h4>
-                <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
-                </div>
-              </a>
-              <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт.</p>
-            </div>
-          </article>
-          <article class="article-card listing__article-card">
-            <a href="#" class="article-card__link">
-              <picture class="article-card__picture">
-                <img src="assets/images/blog/radio.jpg" alt="Rocking radio" class="article-card__img" />
-              </picture>
+            <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт.</p>
+          </div>
+        </article>
+        <article class="article-card listing__article-card">
+          <a href="#" class="article-card__link">
+            <picture class="article-card__picture">
+              <img src="assets/images/blog/radio.jpg" alt="Rocking radio" class="article-card__img" />
+            </picture>
+          </a>
+          <div class="article-card__info">
+            <time datetime="2022-11-01T00:00" class="article-card__time">01.11.2022</time>
+            <a href="#" class="article-card__title-link">
+              <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
+              <div class="article-card__arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </div>
             </a>
-            <div class="article-card__info">
-              <time datetime="2022-11-01T00:00" class="article-card__time">01.11.2022</time>
-              <a href="#" class="article-card__title-link">
-                <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
-                <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
-                </div>
-              </a>
-              <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света.</p>
-            </div>
-          </article>
-        </div>
-        <a href="#" class="listing__link link">Смотреть все</a>
-      </section>
+            <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света.</p>
+          </div>
+        </article>
+      </div>
+      <a href="#" class="listing__link link">Смотреть все</a>
+    </section>
+    <!-- prettier-ignore -->
+    <section class="contacts @@class">
+      <h2 class="contacts__title section-title">Контакты</h2>
 
-    </div>
+      <div class="contacts__wrapper">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <div class="contacts__item-mark">
+              <svg class="contacts__item-icon" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#dot"></use>
+              </svg>
+            </div>
+            <div class="contacts__item-content">
+              <h4 class="contacts__item-title">Томск, Белая 8</h4>
+              <div class="contacts__item-info">2 этаж</div>
+              <div class="contacts__item-info">оф. 207-208</div>
+            </div>
+          </li>
+
+          <li class="contacts__item">
+            <div clas="contacts__item-mark">
+              <svg class="contacts__item-icon" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#home">
+                </use>
+              </svg>
+            </div>
+            <div class="contacts__item-content">
+              <h4 class="contacts__item-title">Отдел аренды</h4>
+              <div class="contacts__item-info">+7 499 350 0730</div>
+              <div class="contacts__item-info">hi@tagree.ru</div>
+            </div>
+          </li>
+
+          <li class="contacts__item">
+            <div class="contacts__item-mark">
+              <svg class="contacts__item-icon" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#star">
+                </use>
+              </svg>
+            </div>
+            <div class="contacts__item-content">
+              <h4 class="contacts__item-title">Отдел мероприятий</h4>
+              <div class="contacts__item-info">+7 499 350 0730</div>
+              <div class="contacts__item-info">hi@tagree.ru</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contacts__map" id="js-contactsMap"></div>
+      </div>
+    </section>
 
   </main>
 
@@ -403,7 +452,6 @@
       <p class="text1">Блок подписка</p>
     </div>
   </footer>
-
 
 
   <div class="pp" id="js-eventPP">
@@ -526,6 +574,7 @@
     </div>
   </div>
   <script src="scripts/swiper.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
   <script src="scripts/main.min.js"></script>
   <script src="scripts/main.js"></script>
 
