@@ -31,6 +31,11 @@
         "start": "gulp start"
     },
     "dependencies": {
+        "air-datepicker": "^3.5.3",
+        "jquery": "^3.7.1",
+        "jquery-mask-plugin": "^1.14.16",
+        "jquery-validation": "^1.21.0",
+        "normalize.css": "^8.0.1",
         "swiper": "^11.2.2"
     }
 }
