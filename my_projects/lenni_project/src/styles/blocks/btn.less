@@ -1,0 +1,60 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid #1f1e1e;
+    background-color: transparent;
+    outline: none;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  &:hover, :active {
+    background-color: #1f1e1e;
+    color: #ffffff
+  }
+}
+
+.btn--red {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  background-color: @red;
+  outline: none;
+  color: @white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+  border: none;
+&:hover, :active {
+  background-color: @red_dark;
+}
+}
+
+.btn--black {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  background-color: @black;
+  outline: none;
+  color: @white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+  border: none;
+&:hover, :active {
+  background-color: @red_dark;
+}
+}

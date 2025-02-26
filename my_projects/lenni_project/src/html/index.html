@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- class="show-event-popup" -->
+  @@include('blocks/head.html')
+
+  <body class="body">
+    @@include('blocks/page-header.html')
+    
+    <div class="logo-block">
+      <span class="header1">АРТ-ПРОСТРАНСТВО</span>
+      <img src="assets/icons/lenni.svg" alt="lenni" class="logo__icon" />
+      <span class="header1">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ</span>
+      <span class="header1">МЕСТО ДЛЯ НАСТОЯЩЕГО</span>
+    </div>
+    
+    <div class="iwant-block">
+      <h3 class="header3">Я ХОЧУ:</h3>
+      <div class="iwant-block__btn">
+        <button type="button" class="btn btn--red" id="js-eventOpenBtn">
+          Провести мероприятие
+        </button>
+        <a href="#" class="btn btn">Стать арендатором</a>
+      </div>
+    </div>
+
+
+    <main class="main">
+      
+      <h2 class="listing__title section-title">О НАС</h2>
+      <!-- prettier-ignore -->
+      @@include('blocks/about.html', {"class": "about"})
+      <!-- prettier-ignore -->
+      @@include('blocks/table-tarifs.html')
+      <!-- prettier-ignore -->
+      @@include('blocks/upcoming.html', {"class": "home__upcoming"})
+      <!-- prettier-ignore -->
+      @@include('blocks/blog-listing.html', {"class": "home__listing"})
+      <!-- prettier-ignore -->
+      @@include('blocks/contacts.html')
+
+    </main>
+
+    @@include('blocks/page-footer.html')
+    @@include('blocks/event-pp.html')
+
+    <script src="scripts/swiper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="scripts/jquery.selectric.min.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    <script src="scripts/air-datepicker.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/jquery.validate-init.js"></script>
+    <script src="scripts/main.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
