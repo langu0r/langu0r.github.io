@@ -1,4 +1,5 @@
 .reserve {
+    padding: 40px 0 150px 40px;
     display: grid;
     gap: 65px 11%;
     grid-template-columns: 405px calc(89% - 405px);
@@ -28,14 +29,14 @@
           "order"; 
       }
 
-
-    &__checkbox {
-        grid-area: "checkbox";
-        background-color: red;
+    &__checks {
+        grid-area: "checks";
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     &__scheme {
         grid-area: "scheme";
-        background-color: blue;
     }
     &__order {
         grid-area: "order";
@@ -44,5 +45,19 @@
     &__legend {
         grid-area: "legend";
         background-color: yellow;
+    }
+    &__picture {
+      @media @bw1340 {
+        min-width: 780px;
+        min-height: 399px;
+      }
+      @media @bw1020 {
+        min-width: 628px;
+        min-height: 322px;
+      }
+      @media @bw768 {
+        min-width: 280px;
+        min-height: 144px;
+      }
     }
   }
