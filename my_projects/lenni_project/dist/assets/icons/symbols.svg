@@ -32,7 +32,9 @@
 </g></symbol><symbol id="dot"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h110v110H0z"/>
     <circle cx="55" cy="55" r="9" fill="#BC3324"/>
-</g></symbol><symbol id="Group 1045903"><g fill="none">
+</g></symbol><symbol id="ellipse-gray"><g fill="none">
+    <circle cx="12" cy="12" r="11.5" fill="#BFBFBF" stroke="#BFBFBF"/>
+</g></symbol><symbol id="footer-line"><g fill="none">
     <path fill="url(#a)" d="M0 0h618v2H0z"/>
     <path fill="url(#b)" d="M716 0h618v2H716z"/>
     
@@ -54,6 +56,17 @@
     <path d="M108.923 124h.54l2.94-8.55h8.55l3.33 8.55h4.47l-8.1-20.91h-4.53l-7.2 20.91Zm7.5-20.25 4.35 11.19h-8.19l3.84-11.19ZM132.644 103.09V124h4.26v-7.23h5.07l4.89 7.2h4.86l-5.16-7.65c3-.78 5.28-2.64 5.28-6.81 0-5.22-3.81-6.87-8.25-6.87-4.68 0-6.03 3.51-6.69 7.41v-6.96h-4.26Zm5.43 4.38c.81-2.94 2.91-4.14 4.77-4.29 4.47-.42 4.65 2.43 4.65 6.33 0 6.33-3.36 6.75-6.24 6.75h-4.35s-.12-4.14 1.17-8.79ZM162.084 103.6l.03 20.4h4.26v-20.4h8.61v-.51h-21.51v.51h8.61Z" fill="#fff"/>
 </g></symbol><symbol id="red-line"><g fill="none">
     <path fill="#BC3324" d="M4 198H0V0h4z"/>
+</g></symbol><symbol id="round-gray"><g fill="none">
+    <circle cx="12" cy="12" r="11.5" stroke="#1F1E1E"/>
+</g></symbol><symbol id="round-red"><g fill="none">
+    <circle cx="12" cy="12" r="11.5" stroke="#BC3324"/>
+</g></symbol><symbol id="round-two"><g fill="none">
+    <circle cx="12" cy="12" r="11.5" stroke="#1F1E1E"/>
+    <circle cx="24" cy="12" r="11.5" stroke="#BC3324"/>
+</g></symbol><symbol id="square-black"><g fill="none">
+    <path fill="#1F1E1E" d="M0 0h24v24H0z"/>
+</g></symbol><symbol id="square-red"><g fill="none">
+    <path fill="#A51505" d="M0 0h24v24H0z"/>
 </g></symbol><symbol id="star"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h110v110H0z"/>
     <path d="M64.663 51.772a1 1 0 0 1 .33.462 1 1 0 0 1-.32 1.02l-4.13 4 1 5.68a1 1 0 0 1-.99 1.19.93.93 0 0 1-.46-.12l-5.1-2.68-5.12 2.67a1 1 0 0 1-1.45-1.07l1-5.68-4.13-4a1 1 0 0 1-.25-1 1 1 0 0 1 .81-.68l5.69-.84 2.55-5.16a1 1 0 0 1 1.8 0l2.55 5.17 5.69.83a1 1 0 0 1 .53.208Z" fill="#BC3324"/>

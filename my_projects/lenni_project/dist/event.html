@@ -50,14 +50,14 @@
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg class="page-header__logo-icon" width="152" height="111">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
 
       <nav class="page-header__nav">
-        <a href="#" class="page-header__nav-link">Мероприятия</a>
+        <a href="event.html" class="page-header__nav-link">Мероприятия</a>
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
@@ -138,14 +138,14 @@
     <body class="body">
       <header class="page-header">
         <div class="page-header__container">
-          <a href="#" class="page-header__logo">
+          <a href="index.html" class="page-header__logo">
             <svg class="page-header__logo-icon" width="152" height="111">
               <use xlink:href="assets/icons/symbols.svg#logo"></use>
             </svg>
           </a>
 
           <nav class="page-header__nav">
-            <a href="#" class="page-header__nav-link">Мероприятия</a>
+            <a href="event.html" class="page-header__nav-link">Мероприятия</a>
             <a href="#" class="page-header__nav-link">Блог</a>
             <a href="#" class="page-header__nav-link">О нас</a>
             <a href="#" class="page-header__nav-link">Контакты</a>
@@ -229,7 +229,7 @@
     <form class="reserve">
 
       <div class="reserve__checks">
-        <h4 class="reserve__section-title">
+        <h4 class="reserve__title">
           Забронировать столик
         </h4>
         <label class="reserve__check check check--red">
@@ -297,14 +297,65 @@
         <img class="reserve__picture" src="assets/images/scheme.png">
       </div>
       <div class="reserve__order">
+        <span class="reserve__title">Ваши пригласительные билеты</span>
+        <div class="order__price">
+          <span class="order__count">9 шт. | 1400 ₽</span>
+          <span class="order__sum">12 600 ₽</span>
+        </div>
+        <div class="order__price">
+          <span class="order__count">4 шт. | 1250 ₽</span>
+          <span class="order__sum">5000 ₽</span>
+        </div>
+        <div class="order__fullprice">
+          <span class="order__sum-text">Сумма</span>
+          <span class="order__sum-text">17 600 ₽</span>
+        </div>
+        <button type="button" class="btn btn--red btn-order">
+          Купить билеты
+        </button>
       </div>
       <div class="reserve__legend">
+        <div class="legend__prices">
+          <span class="reserve__title">Стоимость пригласительного билета</span>
+          <div class="legend__item">
+            <svg width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#square-red"></use>
+            </svg>
+            <span>1400 ₽ | 1 персона</span>
+          </div>
+          <div class="legend__item">
+            <svg width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#square-black"></use>
+            </svg>
+            <span>1250 ₽ | 1 персона</span>
+          </div>
+        </div>
+        <div class="legend__notes">
+          <span class="reserve__title">Примечание</span>
+          <div class="legend__item">
+            <svg width="36" height="24">
+              <use xlink:href="assets/icons/symbols.svg#round-two"></use>
+            </svg>
+            <span>доступные места</span>
+          </div>
+          <div class="legend__item">
+            <svg width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#ellipse-gray"></use>
+            </svg>
+            <span>забронировано</span>
+          </div>
+        </div>
+
       </div>
+
 
     </form>
   </main>
-
+  <svg class="page-footer__line">
+    <use xlink:href="assets/icons/symbols.svg#footer-line"></use>
+  </svg>
   <footer class="page-footer">
+
     <div class="page-footer__menu">
       <div class="page-footer__block-links">
         <svg class="page-header__red-line" width="4" height="198">

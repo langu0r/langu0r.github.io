@@ -1,11 +1,11 @@
 .reserve {
-    padding: 40px 0 150px 40px;
+    padding: 40px 0 40px 40px;
     display: grid;
     gap: 65px 11%;
-    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-columns: 405px calc(83% - 405px);
     grid-template-areas: 
       "checks scheme"
-      "order legend"; 
+      "orders legend"; 
     width: 100%;
 
     @media @bw1340 {
@@ -18,7 +18,7 @@
         grid-template-areas: 
           "scheme scheme"
           "checks legend"
-          "checks order"; 
+          "checks orders"; 
       }
       @media @bw768 {
         grid-template-columns: 100%;
@@ -26,25 +26,33 @@
           "scheme"
           "legend"
           "checks"
-          "order"; 
+          "orders"; 
       }
 
     &__checks {
-        grid-area: "checks";
+        grid-area: checks;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
     &__scheme {
-        grid-area: "scheme";
+        grid-area: scheme;
     }
     &__order {
-        grid-area: "order";
-        background-color: magenta;
+        grid-area: orders;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
     &__legend {
-        grid-area: "legend";
-        background-color: yellow;
+        grid-area: legend;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
     }
     &__picture {
       @media @bw1340 {
@@ -59,5 +67,44 @@
         min-width: 280px;
         min-height: 144px;
       }
+    }
+  }
+
+  .order {
+    &__price {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__sum {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &__fullprice {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    &__sum-text {
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+
+  .btn-order {
+    width: 100%;
+  }
+
+  .legend {
+    &__prices, &__notes {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      gap: 25px;
+    }
+    
+    &__item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
     }
   }
