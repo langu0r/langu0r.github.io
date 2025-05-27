@@ -3819,6 +3819,11 @@ button.swiper-pagination-bullet {
 .form__cancel {
   width: 401px;
 }
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .table {
   padding-left: 40px;
   padding-right: 40px;
@@ -3826,6 +3831,7 @@ button.swiper-pagination-bullet {
   max-width: 1414px;
   margin-bottom: 100px;
   width: 100%;
+  min-width: 700px;
   border-collapse: collapse;
   color: #1F1E1E;
   text-align: center;
@@ -4273,6 +4279,39 @@ button.swiper-pagination-bullet {
   .page-header__user-icon {
     display: block;
     margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+  .table__th,
+  .table__td,
+  .table__body-th {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .table__th {
+    height: auto;
+    font-size: 14px;
+  }
+  .table__body-th {
+    font-size: 14px;
+  }
+  .table__td {
+    font-size: 14px;
+  }
+  .ok {
+    width: 20px;
+    height: 20px;
+  }
+  .ok::after {
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
 }
 @media (max-width: 767px) {
