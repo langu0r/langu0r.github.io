@@ -11,6 +11,7 @@
     const eventPP = document.querySelector("#js-eventPP");
     if (eventPP) {
       const eventOpenBtn = document.querySelector("#js-eventOpenBtn");
+
       const closeEventPP = function (event) {
         function close() {
           document.removeEventListener("keyup", closeEventPP);
@@ -30,12 +31,25 @@
             break;
         }
       };
+
+      
+     if (eventOpenBtn) {
       eventOpenBtn.addEventListener("click", function () {
         root.classList.add("show-event-popup");
         document.addEventListener("keyup", closeEventPP);
         eventPP.addEventListener("click", closeEventPP);
       });
     }
+
+    const closeButtons = document.querySelectorAll("#js-ppCloseBtn");
+    closeButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        root.classList.remove("show-event-popup");
+        document.removeEventListener("keyup", closeEventPP);
+        eventPP.removeEventListener("click", closeEventPP);
+      });
+    })
+  }
 
     const swipers = document.querySelectorAll(".js-swiper");
 swipers.forEach(function (swpr) {

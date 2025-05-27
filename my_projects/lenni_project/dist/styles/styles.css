@@ -2658,16 +2658,12 @@ button.swiper-pagination-bullet {
   width: calc(33.3333% - 60px);
   margin: 0 30px 120px;
 }
-.listing:nth-child(3n) {
-  margin-right: 0;
-}
 .home {
   padding: 140px 0 100px;
   background-color: #dedede;
 }
 .home__listing {
   margin-bottom: 95px;
-  margin-left: 0;
 }
 .reserve {
   padding: 40px 0 40px 40px;
@@ -3944,7 +3940,7 @@ button.swiper-pagination-bullet {
 }
 .about__text {
   grid-area: text;
-  margin: 0;
+  margin: 20px 0;
   margin-left: auto;
   max-width: 870px;
 }
