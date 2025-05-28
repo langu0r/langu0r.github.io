@@ -28,15 +28,26 @@
       
       <h2 class="listing__title section-title">О НАС</h2>
       <!-- prettier-ignore -->
+      <section id="about">
       @@include('blocks/about.html', {"class": "about"})
+      </section>
+      
       <!-- prettier-ignore -->
       @@include('blocks/table-tarifs.html')
       <!-- prettier-ignore -->
+    <section id="events">
       @@include('blocks/upcoming.html', {"class": "home__upcoming"})
       <!-- prettier-ignore -->
+    </section>
+    
+    <section id="blog">
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
-      <!-- prettier-ignore -->
+    </section>
+    
+    <!-- prettier-ignore -->
+    <section id="contacts">
       @@include('blocks/contacts.html')
+    </section>
 
     </main>
 

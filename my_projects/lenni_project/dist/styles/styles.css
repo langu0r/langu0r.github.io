@@ -458,6 +458,25 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
 }
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  text-align: end;
+}
+.link__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.link:hover {
+  text-decoration: underline;
+  color: brown;
+}
 /**
  * Swiper 11.2.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2665,6 +2684,9 @@ button.swiper-pagination-bullet {
 .home__listing {
   margin-bottom: 95px;
 }
+.home__upcoming {
+  margin: 0 230px;
+}
 .reserve {
   padding: 40px 0 40px 40px;
   display: grid;
@@ -3819,19 +3841,13 @@ button.swiper-pagination-bullet {
 .form__cancel {
   width: 401px;
 }
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
 .table {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   max-width: 1414px;
   margin-bottom: 100px;
   width: 100%;
-  min-width: 700px;
   border-collapse: collapse;
   color: #1F1E1E;
   text-align: center;
@@ -3844,6 +3860,8 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+  padding: 10px;
+  word-break: break-word;
 }
 .table__footer-th {
   height: 60px;
@@ -3853,7 +3871,6 @@ button.swiper-pagination-bullet {
 .table__footer-th {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px;
   border-right: 1px solid #BFBFBF;
   text-transform: uppercase;
 }
@@ -3877,6 +3894,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 25px;
   text-align: left;
+  word-break: break-word;
 }
 .table__td {
   -webkit-box-sizing: border-box;
@@ -3887,6 +3905,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  word-break: break-word;
 }
 .table__td:last-child {
   border-right: none;
@@ -4065,6 +4084,9 @@ button.swiper-pagination-bullet {
 .contacts__item-info {
   margin-top: 7px;
 }
+.upcoming__link {
+  margin-right: 30px;
+}
 @media (max-width: 1659px) {
   .width_624 {
     max-width: 604px;
@@ -4106,6 +4128,9 @@ button.swiper-pagination-bullet {
   .page-header__right-block {
     width: 152px;
   }
+  .upcoming__link {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 1339px) {
   .width_624 {
@@ -4146,6 +4171,9 @@ button.swiper-pagination-bullet {
     width: calc(33.3333% - 30px);
     margin: 0 15px 100px;
   }
+  .home__upcoming {
+    margin: 0 40px;
+  }
   .reserve {
     gap: 65px 6.5%;
     grid-template-columns: 340px calc(93.5% - 340px);
@@ -4165,6 +4193,9 @@ button.swiper-pagination-bullet {
   .contacts__wrapper {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .upcoming__link {
+    margin-right: 15px;
   }
 }
 @media (max-width: 1019px) {
@@ -4280,38 +4311,41 @@ button.swiper-pagination-bullet {
     display: block;
     margin: auto;
   }
+  .upcoming__link {
+    margin-right: 15px;
+  }
 }
 @media (max-width: 768px) {
   .table {
-    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: auto;
   }
   .table__th,
   .table__td,
   .table__body-th {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 12px;
+    padding: 5px;
   }
   .table__th {
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
   }
   .table__body-th {
-    font-size: 14px;
+    font-size: 12px;
   }
   .table__td {
-    font-size: 14px;
+    font-size: 12px;
   }
   .ok {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
   .ok::after {
-    top: 3px;
-    left: 7px;
-    width: 6px;
-    height: 10px;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    top: 2px;
+    left: 5px;
+    width: 5px;
+    height: 8px;
   }
 }
 @media (max-width: 767px) {
@@ -4346,6 +4380,9 @@ button.swiper-pagination-bullet {
   }
   .listing__event-card {
     margin: 0 10px 80px;
+  }
+  .home__upcoming {
+    margin: 0 30px;
   }
   .reserve {
     grid-template-columns: 100%;
@@ -4388,6 +4425,9 @@ button.swiper-pagination-bullet {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .upcoming__link {
+    margin-right: 10px;
+  }
 }
 @media (max-width: 649px) {
   .listing__events-list {
@@ -4396,6 +4436,12 @@ button.swiper-pagination-bullet {
   .listing__event-card {
     width: 100%;
     margin: 0 0 60px;
+  }
+  .home__upcoming {
+    margin: 0 20px;
+  }
+  .upcoming__link {
+    margin-right: 0px;
   }
 }
 @media (max-width: 599px) {
