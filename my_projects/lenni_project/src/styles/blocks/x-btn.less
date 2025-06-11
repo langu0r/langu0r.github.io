@@ -1,5 +1,7 @@
 .x-btn {
     display: flex;
+    justify-content: center; // Центрирование по горизонтали
+    align-items: center;     // Центрирование по вертикали
     outline: none;
     border: none;
     padding: 0;
@@ -8,10 +10,12 @@
     border-radius: 50%;
     background-color: @black;
     transition: background-color 0.2s;
+    
     @media @bw768 {
         width: 36px;
         height: 36px;
     }
+    
     &:hover {
         @media (hover: hover) {
             background-color: @red_dark;
@@ -23,8 +27,14 @@
     }
     
     &__icon {
-        margin: auto;
+        width: 24px;  // Явно задаем размер иконки
+        height: 24px;
         color: @white;
         pointer-events: none;
+        
+        @media @bw768 {
+            width: 16px;
+            height: 16px;
+        }
     }
 }

@@ -1,5 +1,50 @@
 .event {
-    padding: 40px 40px 150px 40px;
-    background-color: gray;
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title-text {
+    font-family: "Lora", serif;
+    font-size: 70px;
+
+    @media (max-width: 1919px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__img {
+    max-height: 497px;
+    max-width: 532px;
+
+    @media (max-width: 1919px) {
+      max-height: 245px;
+      max-width: 262px;
+    }
+
+    @media (max-width: 767px) {
+      max-height: 245px;
+      max-width: 262px;
+    }
+  }
+
+  &__details {
+    font-size: 30px;
+    font-family: 'Mak';
+    @media (max-width: 1919px) {
+      font-size: 18px;
+    }
+  }
+}

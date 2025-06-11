@@ -34,6 +34,8 @@
     <circle cx="55" cy="55" r="9" fill="#BC3324"/>
 </g></symbol><symbol id="ellipse-gray"><g fill="none">
     <circle cx="12" cy="12" r="11.5" fill="#BFBFBF" stroke="#BFBFBF"/>
+</g></symbol><symbol id="fi_x"><g fill="none">
+    <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="footer-line"><g fill="none">
     <path fill="url(#a)" d="M0 0h618v2H0z"/>
     <path fill="url(#b)" d="M716 0h618v2H716z"/>

@@ -133,6 +133,7 @@
             height: 40px;
             border: none;
             background: none;
+            z-index: 101;
         }
 
         &::before,
@@ -240,6 +241,26 @@
         @media @bw1020 {
             display: block;
             margin: auto;
+        }
+    }
+    
+}
+
+.show-nav {
+    .page-header__nav {
+        transform: translateX(0);
+    }
+
+    .page-header__nav-toggle {
+        &::before {
+            transform: rotate(45deg);
+            top: 19px;
+            box-shadow: none;
+        }
+        
+        &::after {
+            transform: rotate(-45deg);
+            top: 19px;
         }
     }
 }

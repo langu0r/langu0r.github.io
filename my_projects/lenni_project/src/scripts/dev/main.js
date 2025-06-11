@@ -2,9 +2,9 @@
     "use strict";
     
     const root = document.documentElement;
-    const navToogle = document.querySelector("#js-navToggle");
+    const navToggle = document.querySelector("#js-navToggle");
 
-    navToogle.addEventListener("click", function() {
+    navToggle.addEventListener("click", function() {
         root.classList.toggle("show-nav");
     });
 
